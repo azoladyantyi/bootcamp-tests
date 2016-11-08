@@ -1,5 +1,6 @@
 const assert = require('assert');
-// after you declared the function
-assert.equal(greet('Bob'), 'Hi, Bob!');
-//this assert should fail
-assert.equal(greet('Sibu'), 'Hi, Sibo');
+var greet = function(name){
+  console.log('hi,' + name)
+  return 'Hi,' + name;
+};
+assert.equal(greet('Azola'), 'Hi,' + 'Azola');

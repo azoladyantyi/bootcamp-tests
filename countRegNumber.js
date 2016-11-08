@@ -1,8 +1,7 @@
-const assert = require('assert')
-var regCount = function('CA 182736,CY 523519,CJ 812328'){
-  console.log('CA 42665, AA 12 RT GP'+' ' + regCount;
-);
-  return 'CA 42665, AA 12 RT GP'+' ' + regCount;
-
-}
-assert.equal(regCount, 3)
+const assert = require ('assert');
+var countRegNumber = function(registrationNumber){
+  var list = registrationNumber.split(',');
+  var results = list.length;
+  return results;
+};
+assert.equal(countRegNumber('CA 42665, AA 12 RT GP'),2);
