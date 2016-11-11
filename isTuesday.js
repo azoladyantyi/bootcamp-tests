@@ -1,7 +1,8 @@
-var date = 'Tuesday';
-var isWeekday = date.startsWith('T');
-var isDay = date.endsWith('day');
-var length = date.length;
-console.log(isWeekday);
-console.log(isDay);
-console.log(length);
+const assert = require ('assert');
+var isTuesday = function(Day){
+  var results = Day.startsWith('Tu');
+  console.log(results);
+  return results;
+};
+assert.equal(isTuesday('Tuesday'), true);
+assert.equal(isTuesday('Friday'), false);
