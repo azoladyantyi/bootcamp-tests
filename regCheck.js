@@ -1,6 +1,6 @@
 const assert = require ('assert');
-var regCheck = function(registrationNumber, check){
-  var results = registrationNumber.endsWith(check);
+var regCheck = function(registrationNumber, location){
+  var results = registrationNumber.endsWith(location);
   console.log(results);
   return results;
 };
