@@ -1,8 +1,8 @@
 const assert = require ('assert');
-const weekdayas = new Date('2016-11-08');
+const weekdays = new Date('2016-11-08');
 var sameWeekday = function(firstDate){
   var date = new Date(firstDate);
-  var results = date.getDay() == weekdayas.getDay();
+  var results = date.getDay() == weekdays.getDay();
   console.log(results);
   return results;
 };
