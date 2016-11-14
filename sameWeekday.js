@@ -1,11 +1,10 @@
 const assert = require ('assert');
-var sameWeekday = function(firstDate, secondDate){
-var new Date('firstDate');
-var new Date('secondDate');
-
-  var results = new Date(firstDate) == new Date(secondDate);
+const weekdayas = new Date('2016-11-08');
+var sameWeekday = function(firstDate){
+  var date = new Date(firstDate);
+  var results = date.getDay() == weekdayas.getDay();
   console.log(results);
   return results;
 };
-assert.equal(sameWeekday('2010-04-01', '2010-04-10'),false);
-assert.equal(sameWeekday('2016-11-04', '2016-11-11'),false);
+assert.equal(sameWeekday('2016-11-15'),1);
+assert.equal(sameWeekday('2016-11-16'),0);
