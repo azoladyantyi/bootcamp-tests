@@ -1,7 +1,9 @@
-const assert = require ('assert');
-var getDay = function(day){
-  var results = day.startsWith('Th');
-  console.log(results);
+const assert = require('assert')
+  var getDay = function(today){
+  var today = new Date();
+var weekDays = ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',];
+var results = weekDays[today.getDay()];
+console.log(results);
   return results;
 };
-assert.equal(getDay('Thursday'),true);
+assert.equal(getDay('2016-11-15'), 'Tuesday');
