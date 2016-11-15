@@ -7,4 +7,4 @@ console.log(results);
   return results;
 };
 
-assert.equal(dayToday('2016-08-01'));
+assert.equal(dayToday('2016-08-01'), 'Tuesday');
