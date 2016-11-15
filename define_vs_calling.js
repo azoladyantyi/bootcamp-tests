@@ -1,4 +1,4 @@
-//execute this using define_vs_calling.js
+var daet//execute this using define_vs_calling.js
 
 var theFunction = function(){
     console.log('this is the function executing');
