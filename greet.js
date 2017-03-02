@@ -1,6 +1,5 @@
-const assert = require('assert');
-var greet = function(name){
-  console.log('hi,' + name)
-  return 'Hi,' + name;
-};
-assert.equal(greet('Azola'), 'Hi,' + 'Azola');
+function greet(name) {
+  return 'Hi' + name;
+}
+console.log(greet(' Azola'));
+// assert.equal(greet(' Azola'), 'Hi Azola')
